@@ -1,54 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chake - Digital Marketing Agency</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <title>Chake | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #ff6a00;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { color: white; margin: 0; }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .intro {
+      text-align: center;
+      padding: 40px 20px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .intro h2 { color: #ff6a00; }
+    .intro p { font-size: 1.1em; color: #555; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery-item {
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .gallery-item:hover { transform: translateY(-5px); }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .caption {
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
   <header>
+    <h1>Chake</h1>
     <nav>
-      <h1 class="logo">Chake</h1>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="portfolio.html">Portfolio</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Make Your Brand Unstoppable</h2>
-      <p>We help your products and services get seen by the right customers.</p>
-      <a href="services.html" class="btn">Discover Services</a>
-    </div>
+  <section class="intro">
+    <h2>Our Portfolio</h2>
+    <p>Here’s a sample of how we help brands get seen and connect with their audience through unique digital marketing campaigns.</p>
   </section>
 
-  <section class="features">
-    <h2>What We Do</h2>
-    <div class="feature-grid">
-      <div class="feature">
-        <h3>Social Media Marketing</h3>
-        <p>Engage your audience and grow your presence.</p>
-      </div>
-      <div class="feature">
-        <h3>Paid Ads</h3>
-        <p>Maximize ROI with smart advertising strategies.</p>
-      </div>
-      <div class="feature">
-        <h3>Branding</h3>
-        <p>Create a lasting impression with a unique identity.</p>
-      </div>
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="images/branding-ai.jpg" alt="Brand Identity & Visual Design">
+      <div class="caption">Brand Identity & Visual Design</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/social-ai.jpg" alt="Social Media Campaign – Instagram & TikTok Ads">
+      <div class="caption">Social Media Campaign – Instagram & TikTok Ads</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/ads-ai.jpg" alt="High-Conversion Google & Meta Ad Creatives">
+      <div class="caption">High-Conversion Google & Meta Ad Creatives</div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Chake - Digital Marketing Agency</p>
+    <p>© 2025 Chake Digital Marketing Agency. All rights reserved.</p>
   </footer>
 </body>
 </html>
